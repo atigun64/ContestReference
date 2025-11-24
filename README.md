@@ -1,7 +1,7 @@
 # KIT Team Contest Reference
 > [!TIP]
-> You can use this [pdf.js link](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/mzuenni/ContestReference/new-master/tcr.pdf) to watch the commited pdf with working links,
-> or [this one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://gist.githubusercontent.com/mzuenni/73fb3c58350c58b623f221fc237def62/raw/tcr.pdf) to look at the current build.
+> You can use this [pdf.js link](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/atigun64/ContestReference/new-master/tcr.pdf) to watch the commited pdf with working links,
+> or [this one](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://gist.githubusercontent.com/atigun64/73fb3c58350c58b623f221fc237def62/raw/tcr.pdf) to look at the current build.
 
 The KIT teams have used this document for ICPC-style contests since roughly 2019.
 It consists of 25 pages of copy-pasteable C++ code and one extra page with a checklist for the practice session.
@@ -36,3 +36,4 @@ Here is an (incomplete) list of resources that we use (besides those from previo
  - [![test other](https://github.com/mzuenni/ContestReference/actions/workflows/test_other.yml/badge.svg)](https://github.com/mzuenni/ContestReference/actions/workflows/test_other.yml/)
  - [![test string](https://github.com/mzuenni/ContestReference/actions/workflows/test_string.yml/badge.svg)](https://github.com/mzuenni/ContestReference/actions/workflows/test_string.yml/)
  - [![test template](https://github.com/mzuenni/ContestReference/actions/workflows/test_template.yml/badge.svg)](https://github.com/mzuenni/ContestReference/actions/workflows/test_template.yml/)
+
