@@ -111,13 +111,6 @@
 
 \subsection{Gemischtes}
 \begin{itemize}
-	\item \textbf{(Minimum) Flow mit Demand \textit{d}:}
-	Erstelle neue Quelle $s'$ und Senke $t'$ und setzte die folgenden Kapazitäten:
-	\begin{align*}
-		c'(s',v)&=\sum_{u\in{}V}d(u,v)&c'(v,t')&=\sum_{u\in{}V}d(v,u)\\[-0.5ex]
-		c'(u,v)&=c(u,v)-d(u,v)&c'(t,s)&=x
-	\end{align*}
-	Löse Fluss auf $G'$ mit \textsc{Dinic's Algorithmus}, wenn alle Kanten von $s'$ saturiert sind ist der Fluss in $G$ gültig. $x$ beschränkt den Fluss in $G$ (Binary-Search für minflow, $\infty$ sonst).
 	\item \textbf{\textsc{Johnsons} Reweighting Algorithmus:}
 	Initialisiere alle Entfernungen mit \texttt{d[i] = 0}. Berechne mit \textsc{Bellmann-Ford} kürzeste Entfernungen.
 	Falls es einen negativen Zyklus gibt abrrechen.
@@ -316,5 +309,6 @@
 		\item Unsicher bei benutzten STL-Funktionen?
 	\end{itemize}
 \end{itemize}
+
 
 
