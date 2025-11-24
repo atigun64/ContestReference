@@ -1,7 +1,11 @@
-for i in {1..1000}; do
-	printf "\r$i"
-	python3 gen.py > input      # generate test with gen.py
-	./a.out < input > out       # execute ./a.out
-	./b.out < input > out2      # execute ./b.out
-	diff out out2 || break
+g++ generator.cpp -std=c++20 -o3 -Wall -Wextra -o gen
+g++ brute.cpp -std=c++20 -o3 -Wall -Wextra -o brt
+g++ solution.cpp -std=c++20 -o3 -Wall -Wextra -o sol
+I=0
+while (( ++I <= 1000000 )); do
+    ./gen >in
+    ./brt <in >ans
+    ./sol <in >out
+    diff -bew ans out || break
+    echo "${I}[OK]"
 done
