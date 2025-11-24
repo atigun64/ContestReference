@@ -1,17 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
+#define all(x) x.begin(), x.end()
+#define sz(x) int(size(x))
+#define int ll
 
-#define tsolve int t; cin >> t; while(t--) solve
-#define all(x) ::begin(x), ::end(x)
-#define sz(x) (ll)::size(x)
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+int rand(int l, int r){
+  return uniform_int_distribution<int>(l, r)(rng);
+}
 
-using ll = long long;
-using ld = long double;
+void solve() {
+}
 
-void solve() {}
+signed main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
 
-int main() {
-	cin.tie(0)->sync_with_stdio(false);
-	cout << setprecision(16);
-	solve();
+	cout << fixed << setprecision(20);
+	
+	int T = 1;
+  cin >> T;
+  while (T--) solve();
+	
+  cerr << (double)clock() / CLOCKS_PER_SEC << " secs\n";
 }
